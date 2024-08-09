@@ -1,0 +1,14 @@
+CRITICAL - 2024-08-03 03:57:03 --> ErrorException: Undefined global variable $_SESSION
+[Method: GET, Route: quienes_somos]
+in APPPATH\Views\Front\navbar.php on line 26.
+ 1 APPPATH\Views\Front\navbar.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined global variable $_SESSION', 'C:\\xampp\\htdocs\\ProT3_31969826_nuevo\\app\\Views\\Front\\navbar.php', 26)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ProT3_31969826_nuevo\\app\\Views\\Front\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Front/navbar', [], true)
+ 5 APPPATH\Controllers\Home.php(25): view('Front/navbar')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->quienes_somos()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
